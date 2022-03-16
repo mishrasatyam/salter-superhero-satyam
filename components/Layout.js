@@ -3,7 +3,6 @@ import Footer from './Footer'
 export default function Layout({ children }) {
     const {props} = children
     const {data} = props
-    console.log(data)
   return (
     <>
       <TopBar />

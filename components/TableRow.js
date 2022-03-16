@@ -14,7 +14,6 @@ const TableRow = ({data}) => {
     const closePopup = () => {
         setPopUpData({})
         setShowPopup(false)
-        console.log('here11')
     }
     return (
     <div className="h-full shadow-lg rounded-lg p-2">

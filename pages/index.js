@@ -1,14 +1,11 @@
 import {createHash} from 'crypto'
-// import {readFile} from 'fs/promises'
 
 import Table from "../components/Table"
 
 const Home = ({data}) => {
-  
   return (
     <Table results={data}/>
-  )
-  
+  )  
 }
 
 export default Home

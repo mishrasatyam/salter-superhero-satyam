@@ -17,7 +17,7 @@ const Popup = ({data,closePopup}) => {
                 </details>
                 )}
                 <details className="mt-4">
-                    <summary>URL's</summary>
+                    <summary>{`URL's`}</summary>
                     <ul className="p-4">
                         {data.urls.map(el => <li key={el.url} className="p-2">
                             <a href={el.url} className="capitalize text-blue-500 hover:text-blue-600 hover:underline" target={"_blank"} rel="noreferrer">{el.type}</a>
