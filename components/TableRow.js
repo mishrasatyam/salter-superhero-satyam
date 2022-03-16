@@ -30,7 +30,7 @@ const TableRow = ({data}) => {
         </>
         :
         <div className="text-center mt-20">
-                <span className="font-bold">Not found!</span>
+            <span className="font-bold">Not found!</span>
         </div>
         }
         {show_popup?<Popup data={popup_data} closePopup = {closePopup}/>:''}

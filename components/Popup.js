@@ -7,7 +7,8 @@ const Popup = ({data,closePopup}) => {
                 <span className="cursor-pointer" onClick={closePopup}>Close</span>
             </div>
             <div className="p-4 font-medium">
-                <span>Modified on {new Date(data.modified).toDateString()}</span>
+                <span className="block">{data.description || 'Description not found'}</span>
+                <span className="text-xs">Modified on {new Date(data.modified).toDateString()}</span>
                 {['comics','series','stories','events'].map(key =>
                 <details className="mt-4" key={key}>
                     <summary><span className="capitalize">{key}</span> ({data[key].available})</summary>
