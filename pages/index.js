@@ -38,10 +38,7 @@ export const getStaticProps = async () => {
         data.push({code:200,data : result.data.results[0]})
       }
   }
-  // console.log(response)
-  // console.log(JSON.stringify(data,null,4))
-  // await writeFile('marvel.json',JSON.stringify(data,null,4))
-  // const data = JSON.parse(await readFile('marvel.json'))
+ 
   return {
     props : 
     {
